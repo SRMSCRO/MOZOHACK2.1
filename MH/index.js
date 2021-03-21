@@ -8,8 +8,10 @@ const User = require('./models/user');
 
 const bcrypt = require('bcrypt');
 const session = require("express-session");
+const MongoStore=require("connect-mongo")(session);
 const db = "MH_100";
-mongoose.connect('mongodb://localhost:27017/'+db, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => { console.log("MONGO CONNECTION OPEN") }).catch(err => {
+// 'mongodb://localhost:27017/'+db
+mongoose.connect("mongodb+srv://SCRO:scro2001@clustermh.cfzxv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => { console.log("MONGO CONNECTION OPEN") }).catch(err => {
     console.log("THERE IS A PROBLEM");
     console.log(err)
 });
