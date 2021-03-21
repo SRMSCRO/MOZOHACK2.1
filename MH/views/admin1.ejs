@@ -61,12 +61,15 @@
         <%if(user.Position=="chari"){%>
          <div class="imageContainer">
             <div class="cardimg">
+              
                 <img class="rec" src="../images1/Rectangle 41.png">
+                
             </div>
             <div class="caption text"><%=user.Name%></div>
             
             <div class="caption text1"><img class="pinimg"src="../images1/pin 2.png"><%=user.Address%></div>
-            <div class="caption text4"><%=user.Coor%></div>
+
+            <div class="caption text4"><a href="https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=<%=user.Coor%>">Linkes</a></div>
             <div class="caption text3"><%=user.text%></div>
             
             
