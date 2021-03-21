@@ -6,8 +6,8 @@ For the Mozohack
 #### TO RUN IN LOCAL HOST
 
 1. Download the code and open cmd inside MH folder.
-2. give comman ####node index.js 
-3. Open brower and access #### http://localhost:3000/register
+2. give comman node index.js 
+3. Open brower and access  http://localhost:3000/register
 
 ****
 
