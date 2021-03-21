@@ -32,7 +32,7 @@
     <nav class="navbar navbar-expand-lg navbar-light   navbar-inner ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img class="logo-nav" src="../img/Logo.png"  >
+                <img class="logo-nav" src="../img/avatarAsset 2.svg"  >
               </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -60,9 +60,11 @@
                     <i class="fas fa-search" aria-hidden="true"></i>
                     <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search Charity" aria-label="Search">
                   </form>
-           
+           <%if(lo){%>
+            <a href="/logout"> <img class="button-navbar" src="../img/so.png"> </a>
+           <%}else{%>
             <a href="/register"> <img class="button-navbar" src="../img/Component 4.png"> </a>
-           
+           <%}%>
           </div>
         </div>
       </nav>
@@ -107,12 +109,12 @@
   <div class= "row"> 
   <div class="col-md-5">
     <div class="row">
-    <h2 class="heading1">Kucch bhi payar </h2>
+    <h2 class="heading1" style="color: #CC0063;">Overview</h2>
     <br>
-    <p class="text-events">It’s not how much we give<br>
+    <p class="text-events" style="color:#CC0063;">It’s not how much we give<br>
       but how much love we put into giving</p>
       <br>
-      <p class="mother">-Mother Teressa</p>
+      <p class="mother" style="color: #CC0063;">-Mother Teressa</p>
       <button class="btn2 btn-primary">Donate</button>
 
     </div>
@@ -246,7 +248,7 @@
       <div id="research-slider" class="owl-carousel" style="display: flex;">
         <div class="card" style="max-width: 18rem;">
           <div class="card-header justify-content-center">
-          <img class="calender-img" src="../img/Group 70.png">
+          <img class="calender-img" src="../img/calendar 1.png">
           </div>
           <div class="card-body">
             <h5 class="card-title">Events</h5>
@@ -255,7 +257,7 @@
         </div>
         <div class="card" style="max-width: 18rem;">
           <div class="card-header justify-content-center">
-          <img class="calender-img" src="../img/Group 70.png">
+          <img class="calender-img" src="../img/calendar 1.png">
           </div>
           <div class="card-body">
             <h5 class="card-title">Events</h5>
@@ -264,7 +266,7 @@
         </div>
         <div class="card" style="max-width: 18rem;">
           <div class="card-header justify-content-center">
-          <img class="calender-img" src=" ">
+          <img class="calender-img" src="../img/calendar 1.png">
           </div>
           <div class="card-body">
             <h5 class="card-title">Events</h5>
@@ -363,7 +365,7 @@
       <div class="row">
         <div class="col-md-3" ></div>
       <div class="col-md-3" >
-      <img style="  margin-bottom: 20px;" src="../img/Group 68.png">
+      <img style="margin-bottom: 20px;" class="vol-img" src="../img/Group 68.png">
     </div>
     <div class="col-md-3" ></div>
   </div>
@@ -419,7 +421,7 @@
             <div class="valid-feedback">
               Looks good!
             </div>
-            <button class="btn btn-primary vol-submit-btn" type="submit">Submit form</button>
+            <button class="btn btn-primary vol-submit-btn" type="submit">Submit</button>
           </div>
           <div class="col-md-3"></div>
         </div>
@@ -442,7 +444,7 @@
     </div>
   </div>
 
-  <footer class="footer-background text-center text-lg-start ">
+  <footer class="footer-background text-center text-lg-start container-fluid">
    <!-- Grid container -->
   <div class="container p-4">
     <!--Grid row-->
